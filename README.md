@@ -6,4 +6,4 @@ NIM   : H1D023114
 Shift : Shift H (Lama), Shift F (Baru)  
 
 ## Screenshot Tampilan Aplikasi
-[Screenshot Aplikasi] (TampilanSSAplikasi.jpg)
+[Screenshot Aplikasi] ("TampilanSSAplikasi.jpg")
