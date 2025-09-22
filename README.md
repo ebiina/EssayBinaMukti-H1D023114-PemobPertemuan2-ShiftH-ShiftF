@@ -8,6 +8,5 @@ Shift : Shift H (Lama), Shift F (Baru)
 ## Screenshot Tampilan Aplikasi - Pertemuan 2
 ![Screenshot Aplikasi](TampilanSSAplikasi.jpg)
 
-
 ## Demo Aplikasi - Pertemuan 3
 ![Demo Aplikasi](DemoAplikasi_EssayBinaMukti.gif)
