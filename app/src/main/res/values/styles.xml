@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Tema utama aplikasi -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.App.BottomSheetDialog</item>
+    </style>
+
+    <!-- Tema overlay untuk BottomSheetDialog -->
+    <style name="ThemeOverlay.App.BottomSheetDialog"
+        parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.App.BottomSheet.Modal</item>
+    </style>
+
+    <!-- Custom BottomSheet dengan background rounded -->
+    <style name="Widget.App.BottomSheet.Modal"
+        parent="@style/Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_rounded</item>
+    </style>
+
+</resources>

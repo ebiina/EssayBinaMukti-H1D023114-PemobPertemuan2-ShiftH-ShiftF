@@ -44,15 +44,22 @@ class Halaman2Activity : AppCompatActivity() {
             it.imgIcon.setImageResource(R.drawable.ic_phone)
             it.tvLayout.setText(R.string.telepon)
         }
+
+        binding.layoutBook.let{
+            it.imgIcon.setImageResource(R.drawable.ic_book)
+            it.tvLayout.setText(R.string.koleksi_buku)
+        }
     }
 
     private fun initListener() {
+        // Open Maps
         binding.layoutLocation.root.setOnClickListener {
             val gMapsIntentUri = "$gMapsUrl$latitude,$longitude".toUri()
             val mapIntent = Intent(Intent.ACTION_VIEW, gMapsIntentUri)
             startActivity(mapIntent.setPackage(packageMaps))
         }
 
+        // Open Instagram
         binding.layoutIg.root.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW).apply {
                 data = getString(R.string.ig_himpunan).toUri()
@@ -60,6 +67,7 @@ class Halaman2Activity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        // Open Email
         binding.layoutEmail.root.setOnClickListener {
             val intent = Intent(Intent.ACTION_SENDTO).apply {
                 data = Uri.parse("mailto:${getString(R.string.email)}")
@@ -67,15 +75,23 @@ class Halaman2Activity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        // Dial Phone
         binding.layoutPhone.root.setOnClickListener {
             val intent = Intent(Intent.ACTION_DIAL).apply {
                 data = Uri.parse("tel:${getString(R.string.telepon)}")
             }
             startActivity(intent)
         }
+        binding.layoutBook.root.setOnClickListener {
+            startActivity(
+                Intent(this, DaftarBukuActivity::class.java)
+            )
+        }
 
+        // Back button
         binding.btnBack.setOnClickListener {
             finish()
         }
+
     }
 }

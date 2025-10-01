@@ -13,3 +13,6 @@ Shift : Shift H (Lama), Shift F (Baru)
 
 ## Demo Aplikasi - Pertemuan 4
 ![Demo Aplikasi](DemoAplikasiPertemuan4.gif)
+
+## Demo Aplikasi - Pertemuan 5
+![Demo Aplikasi](DemoAplikasiTugas4Pertemuan5_EssayBinaMukti.gif)
